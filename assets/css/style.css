@@ -1,4 +1,10 @@
 header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+header .container {
     padding: 1.5rem 0;
     align-items: center;
     justify-content: space-between;
@@ -54,7 +60,7 @@ header nav ul li a:hover::after {
 main {
     color: var(--color-white);
     align-items: center;
-    height: calc(100vh - 98px);
+    height: 100vh;
     background: url(../img/img-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -115,6 +121,10 @@ textarea {
 
 .card-form button span {
     margin-left: 10px;
+}
+
+.about {
+    align-items: center;
 }
 
 .about .img-about {
@@ -237,8 +247,56 @@ textarea {
 
 
 
+.chamada-acao {
+    gap: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.chamada-acao .container {
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chamada-acao .content-chamada h2 {
+    font-size: 3rem;
+    width: 30rem;
+}
+
+.chamada-acao .content-chamada {
+    gap: 1rem;
+}
+
+.chamada-acao .content-chamada p {
+    width: 30rem;
+}
+
+.chamada-acao .card-chamada {
+    width: 50%;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    border-radius: 5px;
+    background-color: var(--color-white);
+}
+
+
 
 @media (max-width: 1024px) {
+
+    header {
+        position: static;
+        padding: 1rem 1.5rem;
+    }
+
+    section {
+        padding: 0;
+    }
 
     h2 {
         font-size: 1.75rem;
@@ -261,7 +319,7 @@ textarea {
         align-items: center;
         gap: 1.5rem;
         padding: 2rem 0;
-        background-color: var(--white);
+        background-color: var(--color-white);
         display: none;
     }
 
@@ -316,5 +374,28 @@ textarea {
 
     .group-perguntas .pergunta-item {
         padding: 15px;
+    }
+
+    .chamada-acao .container {
+        gap: 2rem;
+    }
+
+    .chamada-acao .content-chamada h2,
+    .chamada-acao .content-chamada p {
+        width: auto;
+    }
+
+    .chamada-acao .content-chamada h2 {
+        font-size: 1.75rem;
+    }
+
+    .chamada-acao .card-chamada {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .chamada-acao .card-chamada {
+        font-size: 16px;
+
     }
 }
