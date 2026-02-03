@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="flex-col">
 
     <header class="flex container">
-        <h1 class="logo"><a href="#">Seu<span>Destino</span></a></h1>
+        <h1 class="logo"><i class="fa-solid fa-plane"></i> <a href="#">Seu<span>Destino</span></a></h1>
 
         <nav>
             <ul class="menu flex">
@@ -33,7 +37,31 @@
 
         <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
     </header>
-    
+
+    <main id="inicio">
+        <div class="flex bg">
+            <section class="container flex hero">
+                <div class="main-content flex-col">
+                    <h1>Explore o mundo, viva novas experiências!</h1>
+                    <h2>Criamos experiências únicas e personalizadas para você viajar
+                        com tranquilidade, conforto e alegria. Do planejamento ao
+                        destino final, cuidamos de tudo para você só aproveitar.</h2>
+                </div>
+                <div class="card-form flex-col">
+                    <form class="flex-col">
+                        <h3>Planeje e viaje</h3>
+                        <input type="text" name="name-form" id="name-form" placeholder="Nome:">
+                        <input type="email" name="email-form" id="email-form" placeholder="E-mail:" >
+                        <input type="tel" name="tel" id="tel" placeholder="DDD + Telefone:">
+                        <textarea name="text-form" id="text-form" placeholder="Como Podemos te Ajudar?"></textarea>
+                        <button type="submit">Quero viajar agora <span><i class="fa-solid fa-plane"></i></span></button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
