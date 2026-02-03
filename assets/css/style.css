@@ -117,18 +117,14 @@ textarea {
     margin-left: 10px;
 }
 
-.about {
-    padding: 10rem 0;
-    gap: 4rem;
-}
-
 .about .img-about {
     width: 50%;
     border-radius: 10px;
 }
 
 .about .content-about {
-    gap: 1rem;
+    gap: 3rem;
+    justify-content: center;
 }
 
 .about .content-about p {
@@ -153,7 +149,6 @@ textarea {
 
 .beneficios {
     text-align: center;
-    padding: 5rem 0;
     background-color: #ececec;
     gap: 2rem;
     align-items: center;
@@ -167,6 +162,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
 .beneficio-item {
@@ -174,7 +170,6 @@ textarea {
     height: 18rem;
     justify-content: center;
     flex: 1 1 300px;
-    max-width: 350px;
     gap: 1.5rem;
     border-radius: 10px;
     background-color: var(--color-white);
@@ -191,8 +186,63 @@ textarea {
 
 
 
+.perguntas {
+    align-items: center;
+    gap: 4rem;
+}
+
+.perguntas .group-perguntas {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.group-perguntas .pergunta-item {
+    flex: 1 1 400px;
+    cursor: pointer;
+    border: 2px solid var(--color-secondary);
+    transition: .3s ease-in-out;
+    padding: 20px;
+    gap: 1rem;
+}
+
+.group-perguntas .pergunta-item:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.pergunta-item.ativo .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.group-perguntas .pergunta-item .top-pergunta-item {
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-perguntas .pergunta-item .top-pergunta-item span {
+    gap: 1rem;
+    align-items: center;
+}
+
+.group-perguntas .pergunta-item p {
+    display: none;
+}
+
+.pergunta-item.ativo p {
+    display: block;
+    color: var(--color-secondary);
+}
+
+
+
 
 @media (max-width: 1024px) {
+
+    h2 {
+        font-size: 1.75rem;
+    }
 
     .container {
         padding: 2.5rem;
@@ -257,5 +307,14 @@ textarea {
     .about .img-about {
         width: 100%;
         max-width: 500px;
+    }
+
+    .beneficios {
+        gap: 0;
+        padding: 2rem 0;
+    }
+
+    .group-perguntas .pergunta-item {
+        padding: 15px;
     }
 }
