@@ -44,21 +44,11 @@ header nav ul li a:hover::after {
 }
 
 
-header .tel {
-    color: var(--color-white);
-    font-weight: 600;
-    padding: 15px 30px;
-    border-radius: 5px;
-    background-color: var(--color-primary);
-}
-
 .btn-menu {
     display: none;
     font-size: 1.5rem;
     color: var(--color-primary);
 }
-
-
 
 
 main {
@@ -123,16 +113,6 @@ textarea {
     border: 1px solid #ccc;
 }
 
-.card-form button {
-    padding: 15px;
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
 .card-form button span {
     margin-left: 10px;
 }
@@ -149,11 +129,6 @@ textarea {
 
 .about .content-about {
     gap: 1rem;
-}
-
-.about .content-about h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
 }
 
 .about .content-about p {
@@ -176,6 +151,45 @@ textarea {
 }
 
 
+.beneficios {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #ececec;
+    gap: 2rem;
+    align-items: center;
+}
+
+.beneficios h2 {
+    margin-bottom: 4rem;
+}
+
+.group-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.beneficio-item {
+    padding: 0 30px;
+    height: 18rem;
+    justify-content: center;
+    flex: 1 1 300px;
+    max-width: 350px;
+    gap: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--color-white);
+}
+
+.beneficio-item i {
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.beneficio-item .content-beneficio-item {
+    gap: 0.5rem;
+}
+
+
 
 
 @media (max-width: 1024px) {
@@ -184,7 +198,7 @@ textarea {
         padding: 2.5rem;
     }
 
-    .tel {
+    header .btn-acao {
         display: none;
     }
 
