@@ -42,6 +42,11 @@ li {
 
 input, textarea {
     outline: none;
+    font-family:" Inter", sans-serif;
+}
+
+textarea {
+    resize: none;
 }
 
 .flex {
@@ -57,6 +62,14 @@ input, textarea {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.logo a {
+    margin-left: 5px;
+}
+
+.logo span {
+    color: var(--color-primary);
 }
 
 .btn-acao {
