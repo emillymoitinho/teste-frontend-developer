@@ -87,11 +87,12 @@ main .hero {
 }
 
 .card-form {
-    width: 30%;
+    width: 40%;
     color: var(--color-secondary);
     background-color: var(--color-white);
     border-radius: 10px;
     text-align: center;
+    padding: 20px 15px;
 }
 
 .card-form h3 {
@@ -237,11 +238,6 @@ textarea {
     max-width: 400px;
     border-radius: 10px;
     overflow: hidden;
-    transition: .3s ease-in-out;
-}
-
-.group-lugares .lugar-item:hover {
-    transform: scale(1.05);
 }
 
 .group-lugares .lugar-item img {
@@ -291,7 +287,6 @@ textarea {
     gap: 10rem;
     justify-content: center;
 }
-
 
 .beneficio-item {
     max-width: 65rem;
@@ -641,8 +636,6 @@ textarea {
     .group-beneficios {
         gap: 5rem;
     }
-
-
 
     .group-perguntas .pergunta-item {
         padding: 15px;

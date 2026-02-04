@@ -40,13 +40,15 @@ li {
     list-style: none;
 }
 
-input, textarea {
+input,
+textarea {
     outline: none;
-    font-family:" Inter", sans-serif;
+    font-family: " Inter", sans-serif;
 }
 
 textarea {
     resize: none;
+    height: 100px;
 }
 
 .flex {
@@ -85,4 +87,18 @@ textarea {
 .btn-acao:hover {
     transform: scale(1.05);
     background-color: #f38303;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateX(-100%);
+    transition: all 5s;
+}
+
+.show {
+    filter: blur(0);
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0);
 }

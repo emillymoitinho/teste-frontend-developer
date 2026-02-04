@@ -54,7 +54,7 @@
                         <input type="text" name="nome" id="name-form" placeholder="Digite Seu Nome" required>
                         <input type="email" name="email" id="email-form" placeholder="Seu melhor email" required>
                         <input type="tel" name="telefone" id="tel" placeholder="DDD + Telefone" required>
-                        <textarea name="mensagem" id="text-form" placeholder="Como Podemos te Ajudar?"
+                        <textarea name="mensagem" id="text-form" placeholder="Como Podemos Te Ajudar?"
                             required></textarea>
                         <button type="submit" class="btn-acao">
                             Quero viajar agora <span><i class="fa-solid fa-plane"></i></span>
@@ -69,10 +69,10 @@
     <section id="sobre" class="container about flex">
         <div class="galeria flex">
             <div class="galeria-grid">
-                <img src="assets/img/imagem-turismo.png" alt="Equipe planejando viagem" class="img-grid grande">
-                <img src="assets/img/img-about.png" alt="Equipe planejando viagem" class="img-grid pequena1">
+                <img src="assets/img/imagem-turismo.png" alt="Equipe planejando viagem" class="img-grid grande hidden">
+                <img src="assets/img/img-about.png" alt="Equipe planejando viagem" class="img-grid pequena1 hidden">
                 <img src="assets/img/happy-family-airport.jpg" alt="Família feliz no aeroporto"
-                    class="img-grid pequena2">
+                    class="img-grid pequena2 hidden">
             </div>
         </div>
 
@@ -91,29 +91,29 @@
         </div>
     </section>
 
-
     <section id="destinos" class="destinos">
         <img src="assets/img/mapa2.png" alt="" class="mapa">
         <img src="assets/img/voo.png" alt="" class="voo">
+
         <div class="container flex-col">
             <div class="top-destinos flex-col">
                 <h2><span>Lugares incríveis</span> estão te chamando!</h2>
                 <p>Confira agora os top lugares mais procurados para sua próxima viagem.</p>
             </div>
-            <div class="group-lugares flex">
-                <div class="lugar-item flex-col">
+            <div class="group-lugares flex hidden">
+                <div class="lugar-item flex-col hidden">
                     <img src="assets/img/dubai.jpg" alt="Dubai">
                     <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
                         <p><strong>Dubai, Emirados Árabes</strong></p>
                     </div>
                 </div>
-                <div class="lugar-item flex-col">
+                <div class="lugar-item flex-col hidden">
                     <img src="assets/img/grecia.png" alt="Grecia">
                     <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
                         <p><strong>Grécia</strong></p>
                     </div>
                 </div>
-                <div class="lugar-item flex-col">
+                <div class="lugar-item flex-col hidden">
                     <img src="assets/img/new-york.png" alt="Grecia">
                     <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
                         <p><strong>New York</strong></p>
@@ -129,7 +129,7 @@
 
             <div class="group-beneficios flex">
 
-                <div class="beneficio-item">
+                <div class="beneficio-item hidden">
                     <img src="assets/img/planejamento.png" alt="imagem planejando viagem com os clientes">
                     <div class="beneficio-item-content">
                         <i class="fa-regular fa-map"></i>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="beneficio-item" style="align-items: flex-start;">
+                <div class="beneficio-item hidden" style="align-items: flex-start;">
                     <img src="assets/img/seguranca.png" alt="imagem planejando viagem com os clientes"
                         style="right: -4vw; left: auto">
                     <div class="beneficio-item-content">
@@ -156,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="beneficio-item">
+                <div class="beneficio-item hidden">
                     <img src="assets/img/suporte.png" alt="imagem planejando viagem com os clientes">
                     <div class="beneficio-item-content">
                         <i class="fa-solid fa-headset"></i>
@@ -173,7 +173,7 @@
     </section>
 
     <section id="duvidas" class="container flex perguntas">
-        <div class="left-perguntas flex-col">
+        <div class="left-perguntas flex-col hidden">
             <div class="logo-perguntas">
                 <img src="assets/img/duvida-icon.png" alt="">
                 <h2>Perguntas Frequentes</h2>
@@ -183,7 +183,7 @@
             <a href="#" class="btn-acao"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
         </div>
 
-        <div class="group-perguntas flex">
+        <div class="group-perguntas flex hidden">
             <div class="pergunta-item flex-col">
                 <div class="top-pergunta-item flex">
                     <span class="flex">
