@@ -49,7 +49,7 @@
                         destino final, cuidamos de tudo para você só aproveitar.</h2>
                 </div>
                 <div class="card-form flex-col">
-                    <form  id="form-contato" class="flex-col" action="php/processa_form.php" method="post">
+                    <form id="form-contato" class="flex-col" action="php/processa_form.php" method="post">
                         <h3>Viaje Agora Mesmo!</h3>
                         <input type="text" name="nome" id="name-form" placeholder="Digite Seu Nome" required>
                         <input type="email" name="email" id="email-form" placeholder="Seu melhor email" required>
@@ -97,15 +97,21 @@
             <div class="group-lugares flex">
                 <div class="lugar-item flex-col">
                     <img src="assets/img/dubai.jpg" alt="Dubai">
-                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i><p><strong>Dubai, Emirados Árabes</strong></p> </div>
+                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
+                        <p><strong>Dubai, Emirados Árabes</strong></p>
+                    </div>
                 </div>
                 <div class="lugar-item flex-col">
                     <img src="assets/img/grecia.png" alt="Grecia">
-                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i><p><strong>Grécia</strong></p> </div>
+                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
+                        <p><strong>Grécia</strong></p>
+                    </div>
                 </div>
                 <div class="lugar-item flex-col">
                     <img src="assets/img/new-york.png" alt="Grecia">
-                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i><p><strong>New York</strong></p> </div>
+                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
+                        <p><strong>New York</strong></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,39 +119,57 @@
 
     <section id="beneficios" class="flex-col beneficios">
         <div class="container">
-            <h2>O que Oferecemos Para Você</h2>
+            <h2>O que <span>Oferecemos</span> Para Você</h2>
 
             <div class="group-beneficios flex">
-                <div class="beneficio-item flex-col">
-                    <i class="fa-regular fa-map"></i>
-                    <div class="content-beneficio-item flex-col">
+
+                <div class="beneficio-item">
+                    <img src="assets/img/planejamento.png" alt="imagem planejando viagem com os clientes">
+                    <div class="beneficio-item-content">
+                        <i class="fa-regular fa-map"></i>
                         <h3>Planejamento Personalizado</h3>
-                        <p>Viagens feitas sob medida de acordo com seus interesses, orçamento e estilo de viagem.</p>
+                        <p class="text-beneficio-item">Planejamos cada detalhe da sua viagem de acordo com seus interesses, orçamento e estilo. Desde passeios imperdíveis até experiências únicas, cuidamos de tudo para que você aproveite cada momento sem preocupações.
+                        </p>
+                        <button class="btn-acao">Saiba Mais</button>
                     </div>
                 </div>
-                <div class="beneficio-item flex-col">
-                    <i class="fa-solid fa-lock"></i>
-                    <div class="content-beneficio-item flex-col">
+
+                <div class="beneficio-item" style="align-items: flex-start;">
+                    <img src="assets/img/seguranca.png" alt="imagem planejando viagem com os clientes" style="right: -4vw; left: auto">
+                    <div class="beneficio-item-content">
+                        <i class="fa-solid fa-lock"></i>
                         <h3>Segurança e Tranquilidade</h3>
-                        <p>Consultores com experiência e conhecimento profundo de destinos. Ajuda com reservas,
-                            documentação, vistos e vacinas.</p>
+                        <p class="text-beneficio-item">Nossos consultores experientes garantem que sua viagem seja segura e tranquila. Ajudamos com reservas, documentação, vistos e vacinas, cuidando de todos os detalhes para que você possa aproveitar sem preocupações.
+                        </p>
+                        <button class="btn-acao">Saiba Mais</button>
                     </div>
                 </div>
-                <div class="beneficio-item flex-col">
-                    <i class="fa-solid fa-headset"></i>
-                    <div class="content-beneficio-item flex-col">
+
+                <div class="beneficio-item">
+                    <img src="assets/img/suporte.png" alt="imagem planejando viagem com os clientes">
+                    <div class="beneficio-item-content">
+                        <i class="fa-solid fa-headset"></i>
                         <h3>Assitência 24h</h3>
-                        <p>Suporte em tempo real para qualquer imprevisto durante a viagem</p>
+                        <p class="text-beneficio-item">Suporte em tempo real para qualquer imprevisto durante a viagem. Nossa equipe está disponível a qualquer hora, garantindo ajuda imediata em casos de atrasos, mudanças de voo, problemas com hospedagem ou qualquer outra necessidade que surgir.
+                        </p>
+                        <button class="btn-acao">Saiba Mais</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <a href="#" class="btn-acao">Agendar Viagem</a>
     </section>
 
-    <section id="duvidas" class="container flex-col perguntas">
-        <h2>Perguntas Frequentes</h2>
+    <section id="duvidas" class="container flex perguntas">
+        <div class="left-perguntas flex-col">
+            <div class="logo-perguntas">
+                <img src="assets/img/duvida-icon.png" alt="">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <p>Possui mais uma dúvida?</p>
+            <p><strong>Fale já conosco!</strong></p>
+            <a href="#" class="btn-acao"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+        </div>
+
         <div class="group-perguntas flex">
             <div class="pergunta-item flex-col">
                 <div class="top-pergunta-item flex">
