@@ -6,7 +6,7 @@ Bem-vindo(a) ao repositório da SeuDestino, uma landing page desenvolvida como p
 
 A landing page **SeuDestino** foi criada para apresentar uma consultoria de viagens personalizada.  
 
-![Print Landing Page SeuDestino]("assets/img/seuDestino.jpeg")
+![Print Landing Page SeuDestino]("seuDestino.jpeg")
 
 O projeto destaca:
 
