@@ -52,12 +52,12 @@
                     <form id="form-contato" class="flex-col" action="php/processa_form.php" method="post">
                         <h3>Viaje Agora Mesmo!</h3>
                         <input type="text" name="nome" id="name-form" placeholder="Digite Seu Nome" required>
-                        <input type="email" name="email" id="email-form" placeholder="Seu melhor email" required>
+                        <input type="email" name="email" id="email-form" placeholder="Seu melhor e-mail" required>
                         <input type="tel" name="telefone" id="tel" placeholder="DDD + Telefone" required>
                         <textarea name="mensagem" id="text-form" placeholder="Como Podemos Te Ajudar?"
                             required></textarea>
                         <button type="submit" class="btn-acao">
-                            Quero viajar agora <span><i class="fa-solid fa-plane"></i></span>
+                            Quero viajar agora! <span><i class="fa-solid fa-plane"></i></span>
                         </button>
                     </form>
 
@@ -98,7 +98,7 @@
         <div class="container flex-col">
             <div class="top-destinos flex-col">
                 <h2><span>Lugares incríveis</span> estão te chamando!</h2>
-                <p>Confira agora os top lugares mais procurados para sua próxima viagem.</p>
+                <p>Confira agora os lugares mais procurados para sua próxima viagem</p>
             </div>
             <div class="group-lugares flex hidden">
                 <div class="lugar-item flex-col hidden">
@@ -108,13 +108,13 @@
                     </div>
                 </div>
                 <div class="lugar-item flex-col hidden">
-                    <img src="assets/img/grecia.png" alt="Grecia">
+                    <img src="assets/img/grecia.png" alt="Grécia">
                     <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
                         <p><strong>Grécia</strong></p>
                     </div>
                 </div>
                 <div class="lugar-item flex-col hidden">
-                    <img src="assets/img/new-york.png" alt="Grecia">
+                    <img src="assets/img/new-york.png" alt="New York">
                     <div class="tag flex"><i class="fa-solid fa-location-dot"></i>
                         <p><strong>New York</strong></p>
                     </div>
@@ -129,8 +129,8 @@
 
             <div class="group-beneficios flex">
 
-                <div class="beneficio-item hidden">
-                    <img src="assets/img/planejamento.png" alt="imagem planejando viagem com os clientes">
+                <article  class="beneficio-item hidden">
+                    <img src="assets/img/planejamento.png" alt="Imagem de equipe planejando viagem com clientes">
                     <div class="beneficio-item-content">
                         <i class="fa-regular fa-map"></i>
                         <h3>Planejamento Personalizado</h3>
@@ -140,10 +140,10 @@
                         </p>
                         <button class="btn-acao">Saiba Mais</button>
                     </div>
-                </div>
+                </article>
 
-                <div class="beneficio-item hidden" style="align-items: flex-start;">
-                    <img src="assets/img/seguranca.png" alt="imagem planejando viagem com os clientes"
+                <article class="beneficio-item hidden" style="align-items: flex-start;">
+                    <img src="assets/img/seguranca.png"
                         style="right: -4vw; left: auto">
                     <div class="beneficio-item-content">
                         <i class="fa-solid fa-lock"></i>
@@ -154,20 +154,20 @@
                         </p>
                         <button class="btn-acao">Saiba Mais</button>
                     </div>
-                </div>
+                </article>
 
-                <div class="beneficio-item hidden">
-                    <img src="assets/img/suporte.png" alt="imagem planejando viagem com os clientes">
+                <article class="beneficio-item hidden">
+                    <img src="assets/img/suporte.png">
                     <div class="beneficio-item-content">
                         <i class="fa-solid fa-headset"></i>
-                        <h3>Assitência 24h</h3>
+                        <h3>Assistência 24h</h3>
                         <p class="text-beneficio-item">Suporte em tempo real para qualquer imprevisto durante a viagem.
                             Nossa equipe está disponível a qualquer hora, garantindo ajuda imediata em casos de atrasos,
                             mudanças de voo, problemas com hospedagem ou qualquer outra necessidade que surgir.
                         </p>
                         <button class="btn-acao">Saiba Mais</button>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -180,7 +180,7 @@
             </div>
             <p>Possui mais uma dúvida?</p>
             <p><strong>Fale já conosco!</strong></p>
-            <a href="#" class="btn-acao"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            <a href="#" class="btn-acao"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
         </div>
 
         <div class="group-perguntas flex hidden">
@@ -256,7 +256,7 @@
                     com histórias inesquecíveis.</p>
                 <div class="redes-sociais">
                     <ul class="flex">
-                        <li><a href="#" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+                        <li><a href="#" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
                         <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
                         <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
@@ -275,8 +275,11 @@
             </div>
         </div>
 
-        <p class="copyright">&copy Todos os Direitos Reservados - 2026 | Desenvolvido por <a
-                href="https://github.com/emillymoitinho" target="_blank" class="link-emilly">Emilly Moitinho</a></p>
+        <div class="text-footer">
+            <p class="copyright"><span class="logo">Seu<span>Destino</span></span> &copy; Todos os Direitos Reservados - 2026 | Desenvolvido por <a
+                    href="https://github.com/emillymoitinho" target="_blank" class="link-emilly">Emilly Moitinho</a></p>
+            <div style="text-align: center;"><span>CNPJ: 99.999.999/0009-99</span> | <span class="termos"><strong><a href="#">TERMOS DE USO</a></strong></span></div>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>

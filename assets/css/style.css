@@ -1,3 +1,4 @@
+/* HEADER */
 header {
     position: fixed;
     width: 100%;
@@ -11,22 +12,22 @@ header .container {
     justify-content: space-between;
 }
 
-header nav ul {
+header nav .menu {
     gap: 1.25rem;
 }
 
-header nav ul li a {
+.menu a {
     position: relative;
     padding: 8px 15px;
     font-weight: 600;
     transition: .3s ease-in-out;
 }
 
-header nav ul li a:hover {
+.menu a:hover {
     color: var(--color-primary);
 }
 
-header nav ul li a::after {
+.menu a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -42,7 +43,6 @@ header nav ul li a:hover::after {
     width: 100%;
 }
 
-
 .btn-menu {
     display: none;
     font-size: 1.5rem;
@@ -50,11 +50,12 @@ header nav ul li a:hover::after {
 }
 
 
+/* MAIN */
 main {
     color: var(--color-white);
     align-items: center;
     height: 100vh;
-    background: url(../img/img-bg.jpg);
+    background: url(../img/hero.jpg);
     background-position: center;
     background-size: cover;
     background-color: var(--color-white);
@@ -96,8 +97,9 @@ main .hero {
 }
 
 .card-form h3 {
-    margin-bottom: 1rem;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
 }
 
 .card-form form {
@@ -116,6 +118,9 @@ textarea {
     margin-left: 10px;
 }
 
+
+
+/* ABOUT */
 .about {
     display: flex;
     gap: 4rem;
@@ -134,6 +139,7 @@ textarea {
         "grande pequena1"
         "grande pequena2";
     gap: 0.5rem;
+    align-items: stretch;
 }
 
 .img-grid {
@@ -187,6 +193,8 @@ textarea {
     color: var(--color-primary);
 }
 
+
+/* DESTINOS */
 .destinos {
     position: relative;
 }
@@ -266,6 +274,7 @@ textarea {
 }
 
 
+/* BENEFICIOS */
 .beneficios {
     text-align: center;
     background-color: #ececec;
@@ -329,7 +338,7 @@ textarea {
 }
 
 
-
+/* PERGUNTAS */
 .perguntas {
     gap: 4rem;
     flex-wrap: wrap;
@@ -419,7 +428,7 @@ textarea {
 }
 
 
-
+/* CHAMADA ACAO */
 .chamada-acao {
     gap: 1rem;
     color: var(--color-white);
@@ -458,6 +467,8 @@ textarea {
     background-color: var(--color-white);
 }
 
+
+/* FOOTER */
 .footer {
     gap: 4rem;
     padding: 4rem;
@@ -509,13 +520,22 @@ textarea {
 }
 
 .footer .copyright {
+    margin-bottom: 0.5rem;
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid #f3f2f2;
 }
 
+.footer .copyright .logo {
+    font-weight: 600;
+}
+
 .footer .copyright .link-emilly {
     color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.text-footer .termos a {
     text-decoration: underline;
 }
 
@@ -681,7 +701,7 @@ textarea {
 
     .hidden {
         opacity: 1;
-        filter: blur(o);
+        filter: blur(0);
         transform: translateX(0);
         transition: none;
     }
