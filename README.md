@@ -77,7 +77,7 @@ git clone https://github.com/emillymoitinho/teste-frontend-developer.git
   [GitHub](https://github.com/emillymoitinho)
 
   Agradeço a oportunidade de participar deste teste.  
-  Este projeto foi desenvolvido com muita dedicação e atenção aos detalhes, espero que gostem do resultado. ❤️✨
+  Este projeto foi desenvolvido com muita dedicação, espero que gostem do resultado. ❤️✨
 
   
   

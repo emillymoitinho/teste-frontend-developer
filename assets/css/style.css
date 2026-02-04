@@ -125,6 +125,7 @@ textarea {
 
 .galeria {
     flex: 1 1 400px;
+    max-width: 500px;
 }
 
 .galeria-grid {
@@ -234,8 +235,8 @@ textarea {
 .group-lugares .lugar-item {
     height: 30rem;
     position: relative;
-    flex: 1 1 200px;
-    max-width: 400px;
+    flex: 1 1 300px;
+    max-width: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -614,6 +615,10 @@ textarea {
         margin-bottom: 2rem;
     }
 
+    .beneficio-item {
+        max-width: 500px;
+    }
+
     .beneficio-item h3 {
         font-size: 1.5rem;
     }
@@ -669,5 +674,12 @@ textarea {
 
     .footer .left-footer p {
         width: auto;
+    }
+
+    .hidden {
+        opacity: 1;
+        filter: blur(o);
+        transform: translateX(0);
+        transition: none;
     }
 }
