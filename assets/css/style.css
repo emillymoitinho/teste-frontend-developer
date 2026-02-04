@@ -2,6 +2,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: var(--color-white);
+    z-index: 9;
 }
 
 header .container {
@@ -62,7 +63,7 @@ main {
 main .bg {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 main .hero {
@@ -73,7 +74,7 @@ main .hero {
 
 .hero .main-content h1 {
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
     width: 32rem;
 }
 
@@ -128,23 +129,110 @@ textarea {
     justify-content: center;
 }
 
+.about .content-about h2 span{
+    color: var(--color-primary);
+}
+
 .about .content-about p {
     line-height: 1.5rem;
 }
 
 .about .content-about ul {
     gap: 1rem;
-    margin-left: 2rem;
 }
 
 .about .content-about li {
-    list-style: disc;
+    gap: 1rem;
+    align-items: center;
 }
+
+.about .content-about li i {
+    font-size: 20px;
+    color: rgb(2, 184, 2);
+}
+
 
 .about .content-about .text-destaque {
     color: var(--color-primary);
     font-weight: 600;
     font-size: 1.15rem;
+}
+
+.destinos {
+    position: relative;
+}
+
+.destinos .container {
+    gap: 4rem;
+}
+
+.destinos .mapa {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 30%;
+}
+
+.destinos .voo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.2;
+    width: 40%;
+}
+
+.destinos h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.destinos h2 span {
+    color: var(--color-primary);
+}
+
+.destinos .top-destinos {
+    gap: 1rem;
+    align-items: center;
+    z-index: 2;
+}
+
+.destinos .group-lugares {
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.group-lugares .lugar-item {
+    height: 30rem;
+    position: relative;
+    flex: 1 1 200px;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.group-lugares .lugar-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.lugar-item i {
+    font-size: 20px;
+    color: red;
+}
+
+.lugar-item .tag {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    ;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: var(--color-white);
 }
 
 
@@ -174,11 +262,16 @@ textarea {
     gap: 1.5rem;
     border-radius: 10px;
     background-color: var(--color-white);
+    transition: .3s ease-in-out;
 }
 
 .beneficio-item i {
     font-size: 3rem;
     color: var(--color-primary);
+}
+
+.beneficio-item:hover {
+    transform: translateY(-20px);
 }
 
 .beneficio-item .content-beneficio-item {
@@ -294,7 +387,7 @@ textarea {
     width: 30rem;
 }
 
-.footer .left-footer .redes-sociais ul{
+.footer .left-footer .redes-sociais ul {
     gap: 1rem;
 }
 
@@ -307,7 +400,7 @@ textarea {
     color: var(--color-primary);
 }
 
-.footer .links-footer h4{
+.footer .links-footer h4 {
     margin-bottom: 1rem;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -412,9 +505,18 @@ textarea {
         flex-direction: column-reverse;
     }
 
+    .about .content-about h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
     .about .img-about {
         width: 100%;
         max-width: 500px;
+    }
+
+    .destinos .voo, .destinos .mapa {
+        display: none;
     }
 
     .beneficios {
@@ -451,7 +553,7 @@ textarea {
     .footer .content-footer {
         gap: 2rem;
     }
-    
+
     .footer .left-footer p {
         width: auto;
     }

@@ -16,17 +16,19 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="assets/img/mundo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
 </head>
 
 <body class="flex-col">
     <header class="flex">
         <div class="container flex">
+
             <h1 class="logo"><i class="fa-solid fa-plane"></i> <a href="#">Seu<span>Destino</span></a></h1>
             <nav>
                 <ul class="menu flex">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
                     <li><a href="#duvidas">Dúvidas</a></li>
                     <li><a href="#contato">Fale Conosco</a></li>
@@ -47,15 +49,18 @@
                         destino final, cuidamos de tudo para você só aproveitar.</h2>
                 </div>
                 <div class="card-form flex-col">
-                    <form class="flex-col">
-                        <h3>Planeje e Viaje</h3>
-                        <input type="text" name="name-form" id="name-form" placeholder="Nome:">
-                        <input type="email" name="email-form" id="email-form" placeholder="E-mail:">
-                        <input type="tel" name="tel" id="tel" placeholder="DDD + Telefone:">
-                        <textarea name="text-form" id="text-form" placeholder="Como Podemos te Ajudar?"></textarea>
-                        <button type="submit" class="btn-acao">Quero viajar agora <span><i
-                                    class="fa-solid fa-plane"></i></span></button>
+                    <form  id="form-contato" class="flex-col" action="php/processa_form.php" method="post">
+                        <h3>Viaje Agora Mesmo!</h3>
+                        <input type="text" name="nome" id="name-form" placeholder="Digite Seu Nome" required>
+                        <input type="email" name="email" id="email-form" placeholder="Seu melhor email" required>
+                        <input type="tel" name="telefone" id="tel" placeholder="DDD + Telefone" required>
+                        <textarea name="mensagem" id="text-form" placeholder="Como Podemos te Ajudar?"
+                            required></textarea>
+                        <button type="submit" class="btn-acao">
+                            Quero viajar agora <span><i class="fa-solid fa-plane"></i></span>
+                        </button>
                     </form>
+
                 </div>
             </section>
         </div>
@@ -65,22 +70,50 @@
         <img src="assets/img/img-about.png" alt="Equipe planejando viagem" class="img-about">
 
         <div class="flex-col content-about">
-            <h2>Quem Somos?</h2>
+            <h2>Conheça o Seu<span>Destino</span>
+            </h2>
             <ul class="flex-col">
-                <li>Somos uma equipe apaixonada por transformar cada viagem em uma experiência inesquecível. </li>
-                <li>Planejamos todos
+                <li class="flex"><i class="fa-regular fa-circle-check"></i>Somos uma equipe apaixonada por transformar
+                    cada viagem em uma experiência inesquecível. </li>
+                <li class="flex"><i class="fa-regular fa-circle-check"></i>Planejamos todos
                     os detalhes para que você possa viajar com tranquilidade, conforto e alegria, oferecendo roteiros
                     personalizados que combinam aventura, cultura e relaxamento.</li>
-                <li>Auxiliamos na compra de passagens e na escolha dos melhores meios de transporte.</li>
+                <li class="flex"><i class="fa-regular fa-circle-check"></i>Auxiliamos na compra de passagens e na
+                    escolha dos melhores meios de transporte.</li>
             </ul>
             <p class="text-destaque">Com a gente, sua única preocupação é
                 aproveitar cada momento!</p>
         </div>
     </section>
 
+    <section id="destinos" class="destinos">
+        <img src="assets/img/mapa2.png" alt="" class="mapa">
+        <img src="assets/img/voo.png" alt="" class="voo">
+        <div class="container flex-col">
+            <div class="top-destinos flex-col">
+                <h2><span>Lugares incríveis</span> estão te chamando!</h2>
+                <p>Confira agora os top lugares mais procurados para sua próxima viagem.</p>
+            </div>
+            <div class="group-lugares flex">
+                <div class="lugar-item flex-col">
+                    <img src="assets/img/dubai.jpg" alt="Dubai">
+                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i><p><strong>Dubai, Emirados Árabes</strong></p> </div>
+                </div>
+                <div class="lugar-item flex-col">
+                    <img src="assets/img/grecia.png" alt="Grecia">
+                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i><p><strong>Grécia</strong></p> </div>
+                </div>
+                <div class="lugar-item flex-col">
+                    <img src="assets/img/new-york.png" alt="Grecia">
+                    <div class="tag flex"><i class="fa-solid fa-location-dot"></i><p><strong>New York</strong></p> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="beneficios" class="flex-col beneficios">
         <div class="container">
-            <h2>Com este serviço você:</h2>
+            <h2>O que Oferecemos Para Você</h2>
 
             <div class="group-beneficios flex">
                 <div class="beneficio-item flex-col">
@@ -91,7 +124,7 @@
                     </div>
                 </div>
                 <div class="beneficio-item flex-col">
-                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-lock"></i>
                     <div class="content-beneficio-item flex-col">
                         <h3>Segurança e Tranquilidade</h3>
                         <p>Consultores com experiência e conhecimento profundo de destinos. Ajuda com reservas,
@@ -99,7 +132,7 @@
                     </div>
                 </div>
                 <div class="beneficio-item flex-col">
-                    <i class="fa-solid fa-lock"></i>
+                    <i class="fa-solid fa-headset"></i>
                     <div class="content-beneficio-item flex-col">
                         <h3>Assitência 24h</h3>
                         <p>Suporte em tempo real para qualquer imprevisto durante a viagem</p>
@@ -120,9 +153,10 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <h4>Quando devo começar a planejar minha viagem?</h4>
                     </span>
-                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <i class="fa-solid fa-plus"></i>
                 </div>
-                <p>Recomendamos iniciar o planejamento com pelo menos 2 a 3 meses de antecedência para garantir melhores
+                <p>Recomendamos iniciar o planejamento com pelo menos <strong>2 a 3 meses</strong> de antecedência para
+                    garantir melhores
                     preços e disponibilidade de hospedagem e passeios.</p>
             </div>
             <div class="pergunta-item flex-col">
@@ -131,7 +165,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <h4>Vocês cuidam de todos os detalhes da viagem?</h4>
                     </span>
-                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <i class="fa-solid fa-plus"></i>
                 </div>
                 <p>Sim! Nossa consultoria organiza roteiros, hospedagem, transporte, passeios e até indicações de
                     restaurantes e experiências locais.</p>
@@ -142,7 +176,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <h4>Quanto custa contratar a consultoria de viagem?</h4>
                     </span>
-                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <i class="fa-solid fa-plus"></i>
                 </div>
                 <p>O valor depende do destino, duração e nível de personalização da viagem. Entre em contato para
                     receber um orçamento detalhado.</p>
@@ -153,7 +187,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <h4>Posso alterar o roteiro depois de contratado?</h4>
                     </span>
-                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <i class="fa-solid fa-plus"></i>
                 </div>
                 <p>Sim, nossa consultoria é flexível. Ajustes podem ser feitos conforme suas necessidades ou
                     imprevistos.</p>
@@ -179,7 +213,8 @@
         <div class="flex content-footer">
             <div class="left-footer flex-col">
                 <h1 class="logo"><i class="fa-solid fa-plane"></i> <a href="#">Seu<span>Destino</span></a></h1>
-                <p>Especialistas em transformar sonhos em roteiros reais. Sua jornada começa no planejamento e termina com histórias inesquecíveis.</p>
+                <p>Especialistas em transformar sonhos em roteiros reais. Sua jornada começa no planejamento e termina
+                    com histórias inesquecíveis.</p>
                 <div class="redes-sociais">
                     <ul class="flex">
                         <li><a href="#" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a></li>
@@ -201,7 +236,8 @@
             </div>
         </div>
 
-        <p class="copyright">&copy Todos os Direitos Reservados - 2026 | Desenvolvido por <a href="https://github.com/emillymoitinho" target="_blank" class="link-emilly">Emilly Moitinho</a></p>
+        <p class="copyright">&copy Todos os Direitos Reservados - 2026 | Desenvolvido por <a
+                href="https://github.com/emillymoitinho" target="_blank" class="link-emilly">Emilly Moitinho</a></p>
     </footer>
 
     <script src="assets/js/script.js"></script>
