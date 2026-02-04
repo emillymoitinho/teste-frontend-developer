@@ -2,6 +2,8 @@
 
 Bem-vindo(a) ao repositório da SeuDestino, uma landing page desenvolvida como parte de um teste técnico Front-End, com foco em experiência do usuário e design responsivo.
 
+[Visualizar o Projeto](https://emillymoitinho.github.io/teste-frontend-developer/)
+
 ## Sobre o Projeto
 
 A landing page **SeuDestino** foi criada para apresentar uma consultoria de viagens personalizada.  
