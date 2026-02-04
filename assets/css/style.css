@@ -586,6 +586,34 @@ textarea {
         padding: 2rem 0;
     }
 
+    .beneficios h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .beneficio-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .beneficio-item img {
+        position: static;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .beneficio-item-content {
+        width: auto;
+    }
+
+    .beneficio-item-content .text-beneficio-item {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+
+    .group-beneficios {
+        gap: 5rem;
+    }
+
     
 
     .group-perguntas .pergunta-item {
