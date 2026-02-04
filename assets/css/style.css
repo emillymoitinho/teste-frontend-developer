@@ -116,46 +116,74 @@ textarea {
 }
 
 .about {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-.about .img-about {
-    width: 50%;
-    border-radius: 10px;
+.galeria {
+    flex: 1 1 400px;
 }
 
-.about .content-about {
-    gap: 3rem;
-    justify-content: center;
+.galeria-grid {
+    display: grid;
+    grid-template-areas:
+        "grande pequena1"
+        "grande pequena2";
+    gap: 0.5rem;
 }
 
-.about .content-about h2 span {
-    color: var(--color-primary);
+.img-grid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.about .content-about p {
-    line-height: 1.5rem;
+.img-grid.grande {
+    grid-area: grande;
 }
 
-.about .content-about ul {
-    gap: 1rem;
+.img-grid.pequena1 {
+    grid-area: pequena1;
 }
 
-.about .content-about li {
-    gap: 1rem;
+.img-grid.pequena2 {
+    grid-area: pequena2;
+}
+
+.content-about {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-about h2 {
+    margin-bottom: 1rem;
+}
+
+.lista-detalhes {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-detalhes li {
+    margin-bottom: 0.75rem;
+    display: flex;
     align-items: center;
 }
 
-.about .content-about li i {
-    font-size: 20px;
-    color: rgb(2, 184, 2);
+.lista-detalhes li i {
+    color: var(--color-primary);
+    margin-right: 0.5rem;
 }
 
-
-.about .content-about .text-destaque {
+.text-destaque {
+    margin-top: 1rem;
+    font-weight: bold;
     color: var(--color-primary);
-    font-weight: 600;
-    font-size: 1.15rem;
 }
 
 .destinos {
@@ -209,6 +237,11 @@ textarea {
     max-width: 400px;
     border-radius: 10px;
     overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.group-lugares .lugar-item:hover {
+    transform: scale(1.05);
 }
 
 .group-lugares .lugar-item img {
@@ -260,7 +293,7 @@ textarea {
 }
 
 
-.beneficio-item  {
+.beneficio-item {
     max-width: 65rem;
     position: relative;
     display: flex;
@@ -270,7 +303,7 @@ textarea {
     background-color: var(--color-white);
 }
 
-.beneficio-item  img {
+.beneficio-item img {
     width: 50%;
     position: absolute;
     top: -10vh;
@@ -278,7 +311,7 @@ textarea {
 
 }
 
-.beneficio-item  h3 {
+.beneficio-item h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -560,20 +593,15 @@ textarea {
         max-width: 400px;
     }
 
-
     .about {
-        align-items: center;
         flex-direction: column-reverse;
     }
 
-    .about .content-about h2 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .about .img-about {
-        width: 100%;
-        max-width: 500px;
+    .galeria-grid {
+        grid-template-areas:
+            "grande"
+            "pequena1"
+            "pequena2";
     }
 
     .destinos .voo,
@@ -614,7 +642,7 @@ textarea {
         gap: 5rem;
     }
 
-    
+
 
     .group-perguntas .pergunta-item {
         padding: 15px;
